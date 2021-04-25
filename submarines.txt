@@ -1,0 +1,70 @@
+db.boats.insertMany([{
+    model: 'Seabreacher Sailfish Inspired',
+    year: 2014,
+    price: 13340,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'DeepFlight Dragon',
+    year: 2014,
+    price: 1648800,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'DeepFlight Super Falcon 3S',
+    year: 2012,
+    price: 54000,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'EGO-Compact Semi-Submarine',
+    year: 1894,
+    price: 75000,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'Triton 1000/7: The Cruise-Liner Sub',
+    year: 1678,
+    price: 134550,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'Triton 3300/1: The Solo Sub',
+    year: 2002,
+    price: 888000,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'Triton 1650/3: The Super-Yacht Sub',
+    year: 2003,
+    price: 1452800,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'Orion 260/1: Super-Monkey Sub',
+    year: 2004,
+    price: 12228999,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'Pluto Sub',
+    year: 1941,
+    price: 200000,
+    is_sail: 'No',
+    has_motor: 'Yes'
+},
+{
+    model: 'Mercurio Sub',
+    year: 1412,
+    price: 298760,
+    is_sail: 'No',
+    has_motor: 'Yes'
+}];

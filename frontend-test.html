@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Test frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="frontend-script.js" charset="utf-8"></script>
+</head>
+<body>
+    <main>
+        <h1>Test frontend</h1>
+        <p>This is a simple frontend for testing your backend server.</p>
+
+        <section>
+            <h2>Settings</h2>
+            <div class="form-group">
+                What is your port?
+                <input type="text" id="inputPort" value="3000" />
+            </div>
+
+            <div class="form-group">
+            <p>What kind of request?</p>
+            <label> <input type="radio" name="requestType" value="GET"/> GET </label>
+            <label> <input type="radio" name="requestType" value="POST"/> POST </label>
+            <label> <input type="radio" name="requestType" value="PUT"/> PUT </label>
+            <label> <input type="radio" name="requestType" value="DELETE"/> DELETE </label>
+            </div>
+
+            <div class="form-group">
+                <p>Do you wish to have a querystring?</p>
+                ?&nbsp;<input type="text" id="querystring" value="x=yes&y=no" />
+            </div>
+
+            <div class="form-group">
+                <p>Do you wish to send any data as JSON?</p>
+                <textarea id="requestBody" rows="8" cols="80">{
+    "example": "value"
+}</textarea>
+            </div>
+
+            <p>
+                Will send request to this URL:
+                <strong><code id="destinationUrl"></code></strong>
+            </p>
+
+            <button id="buttonRequest">Make request</button>
+
+            <div class="form-group" id="resultDiv">
+                Result here
+            </div>
+        </section>
+    </main>
+</body>
+</html>

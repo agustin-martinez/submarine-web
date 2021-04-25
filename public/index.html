@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" charset="utf-8"></script>
+    <title>SBU</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center">
+<header>
+    <div class="header-container">
+        <button id="btn-reset" style="margin: 30px">Reset database</button>
+    </div>
+</header>
+<main>
+    <div class="startpage-container" style="display: flex; flex-direction: column; align-items: center">
+        <img src="logo.png" style="width: 120px">
+        <button class="btn-getBoats" style="display: block; margin: 30px">Get all boats</button>
+    </div>
+
+    <div class="boats-container">
+        <div>
+            <input style="width: 100%; margin-bottom: 20px" type="text" placeholder="Type something here" id="inputSearch">
+            <label style="display: block">Choose a category</label>
+            <select id="categories" name="categories" style="margin-bottom: 20px">
+                <option value="model">Model</option>
+                <option value="maxprice">Maxprice</option>
+                <option value="madebefore">Made before</option>
+                <option value="madeafter">Made after</option>
+            </select>
+            <button id="btn-search">Search</button>
+        </div>
+        <div>
+            <form>
+                <input type="text" placeholder="Model" id="inputModel">
+                <input type="number" placeholder="Year" id="inputYear">
+                <input type="number" placeholder="Price" id="inputPrice">
+                <p>Is sail:</p>
+                <label>Yes</label>
+                <input type="radio" name="is_sail" value="Yes">
+                <label>No</label>
+                <input type="radio" name="is_sail" value="No">
+                <p>Has motor:</p>
+                <label>Yes</label>
+                <input type="radio" name="has_motor" value="Yes">
+                <label>No</label>
+                <input type="radio" name="has_motor" value="No">
+            </form>
+            <button class="btn-addBoat">Add boat</button>
+            <p class="message"></p>
+        </div>
+        <div>
+            <ul class="container">
+            </ul>
+        </div>
+    </div>
+    <div class="product-container">
+        <button class="btn-back">Back</button>
+    </div>
+</main>
+</body>
+</html>
